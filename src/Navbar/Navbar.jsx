@@ -65,7 +65,7 @@ const Navbar = () => {
                 {/* login section */}
 
                 <button
-                  className=" flex justify-center self-center items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100  text-black
+                  className="cursor-pointer flex justify-center self-center items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100  text-black
              "
                 >
                   Login
@@ -74,7 +74,7 @@ const Navbar = () => {
 
               <div className="flex flex-row">
                 <button
-                  className="flex justify-between items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white
+                  className="flex justify-between items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white cursor-pointer
              "
                 >
                   Get Started
