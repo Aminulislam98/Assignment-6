@@ -5,13 +5,13 @@ const Navbar = () => {
         <div className=" bg-white max-w-7xl mx-auto flex justify-between h-12 md:h-15 items-center">
           {/* left section */}
           <div className="left-section">
-            <h2 className="text-xl lg:text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+            <h2 className="text-xl inline-block lg:text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
               DigiTools
             </h2>
           </div>
           {/* middle section */}
           <div className="middle-section">
-            <div className="hidden md:flex">
+            <div className="hidden lg:flex">
               <ul
                 tabIndex="-1"
                 className="flex flex-row space-x-12 text-base text-[#101727]"
@@ -36,8 +36,8 @@ const Navbar = () => {
           </div>
           {/* right section */}
           <div className=" flex flex-row md:justify-between  justify-end  items-center gap-x-12">
-            <div className=" flex flex-row gap-x-1 justify-center items-center space-x-3">
-              <div className="flex flex-row gap-4">
+            <div className=" flex flex-row gap-x-1 justify-center items-center ">
+              <div className=" flex flex-row  gap-4">
                 <div
                   tabIndex={0}
                   role="button"
@@ -64,12 +64,17 @@ const Navbar = () => {
                 </div>
                 {/* login section */}
 
-                <button className="cursor-pointer">Login</button>
+                <button
+                  className=" flex justify-center self-center items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100  text-black
+             "
+                >
+                  Login
+                </button>
               </div>
 
               <div className="flex flex-row">
                 <button
-                  className="flex justify-between items-center font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white
+                  className="flex justify-between items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white
              "
                 >
                   Get Started
