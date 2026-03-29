@@ -3,7 +3,7 @@ import React from "react";
 const Stats = () => {
   return (
     // rating section
-    <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-100 px-0 md:px-4">
+    <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-12 lg:mb-20 px-0 md:px-4">
       {/* rating container */}
       <div className="rating-container flex flex-row max-w-2xl lg:max-w-5xl w-full mx-auto px-4 lg:px-0 py-4 md:py-8 lg:py-15 justify-between">
         <div className="flex flex-col justify-center items-center space-y-2 lg:space-y-3">
