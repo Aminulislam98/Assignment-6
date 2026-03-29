@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../UI/Card";
 
 const CardSection = () => {
   return (
@@ -26,7 +27,9 @@ const CardSection = () => {
           </div>
         </div>
         {/* card container */}
-        <div>cardContainer</div>
+        <div>
+          <Card></Card>
+        </div>
       </div>
     </section>
   );
