@@ -1,7 +1,15 @@
 import React from "react";
 import Card from "../UI/Card";
 
-const CardSection = () => {
+const CardSection = ({ toggleHandler, setToggleHandler }) => {
+  const buttonHandler = (type) => {
+    if (type === "Products") {
+      setToggleHandler("Products");
+    }
+    if (type === "Cart") {
+      setToggleHandler("Cart");
+    }
+  };
   return (
     <section className="w-full py-12 lg:p-y-20 px-0 md:px-4">
       <div className="max-w-7xl w-full mx-auto px-2 lg:px-0">
@@ -16,11 +24,29 @@ const CardSection = () => {
               designed <br className="hidden md:flex" /> to boost your
               productivity and creativity.
             </p>
-            <div className="border-2 border-[#4F39F6]/30 p-1 rounded-4xl flex flex-row justify-center items-center mx-auto gap-2 w-fit mt-3">
-              <button className="text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer">
+            <div className="border-2 border-[#4F39F6]/20 p-1 rounded-4xl flex flex-row justify-center items-center mx-auto gap-2 w-fit mt-3">
+              <button
+                onClick={() => {
+                  buttonHandler("Products");
+                }}
+                className={
+                  toggleHandler === "Products"
+                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer"
+                    : "text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer hover:bg-[#4F39F6]/10 hover:text-[#9514FA]"
+                }
+              >
                 Products
               </button>
-              <button className="text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer">
+              <button
+                onClick={() => {
+                  buttonHandler("Cart");
+                }}
+                className={
+                  toggleHandler === "Cart"
+                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer"
+                    : "text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer hover:bg-[#4F39F6]/10 hover:text-[#9514FA]"
+                }
+              >
                 Cart
               </button>
             </div>
@@ -37,3 +63,4 @@ const CardSection = () => {
 
 export default CardSection;
 <div>top</div>;
+// text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer
