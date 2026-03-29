@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <div>
-      <div className="border-b border-b-gray-100 md:shadow-xs sticky top-0 z-50 bg-white px-2 md:px-4 lg:px-0">
+    <div className="">
+      <div className="border-b border-b-gray-100 md:shadow-xs sticky top-0 z-50 bg-white  md:px-4 lg:px-4 px-2 ">
         <div className=" bg-white max-w-7xl mx-auto flex justify-between h-12 md:h-15 items-center">
           {/* left section */}
           <div className="left-section">

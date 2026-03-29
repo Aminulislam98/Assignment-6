@@ -6,11 +6,11 @@ import watchDemo from "../assets/watchDemo.png";
 const Banner = () => {
   return (
     // banner section
-    <section className="w-full py-12 lg:py-20 px-2 md:px-4 lg:px-0 ">
+    <section className="w-full py-12 lg:py-20 px-2 md:px-4  ">
       {/* banner container */}
       <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row  justify-between gap-5 lg:gap-12">
         {/* banner left side */}
-        <div className="space-y-2 lg:space-y-4  lg:max-w-2xl max-w-full  mx-auto flex flex-col justify-center items-start ">
+        <div className="space-y-2 lg:space-y-4  lg:max-w-2xl max-w-full lg:mx-0 mx-auto flex flex-col justify-center items-start ">
           {/* network section */}
           <div className="bg-[#E1E7FF] rounded-4xl w-full px-4 py-2 flex flex-row justify-center items-center gap-1.5 max-w-73 ">
             <img className="w-4 h-4" src={NetLogo} alt="" />
