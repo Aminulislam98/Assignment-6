@@ -2,9 +2,17 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <div>
-        <h2>HI</h2>
+        <img src="" alt="ProductImage" />
+      </div>
+      <p>
+        Generate high-quality content, blogs, and marketing copy in seconds with
+        advanced AI.
+      </p>
+      <div>
+        <span>£29</span>
+        <span>/Mon</span>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ const CardSection = ({ toggleHandler, setToggleHandler }) => {
                 }}
                 className={
                   toggleHandler === "Products"
-                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-5px_#4F39F6]"
+                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]"
                     : "text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer hover:bg-[#4F39F6]/10 hover:text-[#9514FA]"
                 }
               >
@@ -43,7 +43,7 @@ const CardSection = ({ toggleHandler, setToggleHandler }) => {
                 }}
                 className={
                   toggleHandler === "Cart"
-                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-5px_#4F39F6]"
+                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]"
                     : "text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer hover:bg-[#4F39F6]/10 hover:text-[#9514FA]"
                 }
               >
