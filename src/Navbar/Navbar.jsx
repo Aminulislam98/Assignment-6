@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className=" bg-white max-w-7xl mx-auto flex justify-between h-12 md:h-15 items-center">
           {/* left section */}
           <div className="left-section">
-            <h2 className="text-xl inline-block lg:text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+            <h2 className="text-xl inline-block lg:text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
               DigiTools
             </h2>
           </div>
