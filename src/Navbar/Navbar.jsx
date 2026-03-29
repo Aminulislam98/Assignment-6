@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
           {/* right section */}
           <div className=" flex flex-row md:justify-between  justify-end  items-center gap-x-12">
-            <div className=" flex flex-row gap-x-1 justify-center items-center ">
+            <div className=" flex flex-row gap-x-1 lg:gap-x-3 justify-center items-center ">
               <div className=" flex flex-row  gap-4">
                 <div
                   tabIndex={0}
