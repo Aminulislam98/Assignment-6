@@ -10,7 +10,7 @@ const Banner = () => {
       {/* banner container */}
       <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row  justify-between gap-5 lg:gap-12">
         {/* banner left side */}
-        <div className="space-y-2 lg:space-y-4 max-w-2xl flex flex-col justify-center items-start">
+        <div className="space-y-2 lg:space-y-4 max-w-2xl flex flex-col justify-center items-start ">
           {/* network section */}
           <div className="bg-[#E1E7FF] rounded-4xl w-full px-4 py-2 flex flex-row justify-center items-center gap-1.5 max-w-73 ">
             <img className="w-4 h-4" src={NetLogo} alt="" />
@@ -29,15 +29,15 @@ const Banner = () => {
             software—all in one place. Start creating faster today. Explore
             Products
           </p>
-          <div className="flex flex-row gap-2 lg:gap-4 lg:mt-4">
+          <div className="flex flex-row justify-between gap-2 lg:gap-4 my-3 lg:mt-4 w-full lg:w-auto">
             <button
-              className=" cursor-pointer bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white py-2 px-4 font-semibold text-base rounded-3xl
+              className=" w-full lg:w-auto cursor-pointer bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white py-2 px-4 font-semibold text-base rounded-3xl
             "
             >
               Explore Products
             </button>
             <button
-              className="cursor-pointer flex flex-row justify-center items-center py-2 px-4 font-semibold text-base rounded-3xl gap-2.5 border-2 border-[#4F39F6]
+              className="w-full lg:w-auto cursor-pointer flex flex-row justify-center items-center py-2 px-4 font-semibold text-base rounded-3xl gap-2.5 border-2 border-[#4F39F6]
             bg-linear-to-r from-[#4F39F6] to-[#9514FA]  bg-clip-text text-transparent 
             "
             >
