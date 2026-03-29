@@ -1,7 +1,9 @@
-import React from "react";
+import React, { use } from "react";
 import Card from "../UI/Card";
 
-const CardSection = ({ toggleHandler, setToggleHandler }) => {
+const CardSection = ({ toggleHandler, setToggleHandler, productsList }) => {
+  const products = use(productsList);
+  console.log(products.length);
   const buttonHandler = (type) => {
     if (type === "Products") {
       setToggleHandler("Products");
@@ -53,7 +55,7 @@ const CardSection = ({ toggleHandler, setToggleHandler }) => {
           </div>
         </div>
         {/* card container */}
-        <div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <Card></Card>
         </div>
       </div>

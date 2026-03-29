@@ -5,7 +5,7 @@ const Card = () => {
   return (
     <div className="flex flex-col p-6 border-2 border-purple-300 bg-purple-200 rounded-2xl space-y-4 relative">
       <div className="absolute top-2 right-2 bg-yellow-100 text-yellow-600 py-1 px-4 rounded-2xl">
-        <p className="text-base">Demand</p>
+        <p className="text-sm">Demand</p>
       </div>
       <div className=" mb-2 md:mb-4">
         <img src="" alt="ProductImage" />
@@ -34,7 +34,7 @@ const Card = () => {
         <p className="text-base text-[#627382]">Unlimited AI generations</p>
       </div>
       <div>
-        <button className="w-full text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]">
+        <button className="w-full text-base font-bold   rounded-4xl py-2 md:py-3 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]">
           Buy Now
         </button>
       </div>

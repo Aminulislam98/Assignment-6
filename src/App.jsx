@@ -5,6 +5,12 @@ import CardSection from "./CardSection/CardSection";
 import Navbar from "./Navbar/Navbar";
 import Stats from "./Stats/Stats";
 
+const productsData = async () => {
+  const response = await fetch("/public/productsData.json");
+  return response.json();
+};
+const productsList = productsData();
+
 function App() {
   const [toggleHandler, setToggleHandler] = useState("Products");
   return (
@@ -15,6 +21,7 @@ function App() {
       <CardSection
         toggleHandler={toggleHandler}
         setToggleHandler={setToggleHandler}
+        productsList={productsList}
       ></CardSection>
     </>
   );
