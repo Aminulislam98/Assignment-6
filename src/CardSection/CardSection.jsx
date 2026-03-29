@@ -3,7 +3,7 @@ import Card from "../UI/Card";
 
 const CardSection = ({ toggleHandler, setToggleHandler, productsList }) => {
   const products = use(productsList);
-  console.log(products.length);
+
   const buttonHandler = (type) => {
     if (type === "Products") {
       setToggleHandler("Products");
@@ -13,8 +13,8 @@ const CardSection = ({ toggleHandler, setToggleHandler, productsList }) => {
     }
   };
   return (
-    <section className="w-full py-12 lg:p-y-20 px-0 md:px-4">
-      <div className="max-w-7xl w-full mx-auto px-2 lg:px-0">
+    <section className="w-full py-12 lg:p-y-20 px-0 md:px-4 ">
+      <div className="max-w-7xl w-full mx-auto px-2 lg:px-0 space-y-10">
         {/* top section */}
         <div className="w-full mx-auto flex flex-col justify-center items-center ">
           <div className="space-y-2 lg:space-y-4 flex flex-col justify-center items-center">
@@ -55,8 +55,10 @@ const CardSection = ({ toggleHandler, setToggleHandler, productsList }) => {
           </div>
         </div>
         {/* card container */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <Card></Card>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-stretch">
+          {products.map((product) => (
+            <Card product={product}></Card>
+          ))}
         </div>
       </div>
     </section>

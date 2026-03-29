@@ -1,182 +1,136 @@
 [
   {
     "id": 1,
-    "name": "Starter Plan",
-    "description": "Perfect for individuals and freelancers just getting started.",
-    "price": 9.99,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
     "period": "monthly",
-    "tag": "New",
-    "tagType": "new",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
     "features": [
-      "5 projects",
-      "10GB storage",
-      "Email support",
-      "Basic analytics",
-      "API access"
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
     ],
-    "icon": "FaRocket"
+    "icon": "FaPenNib"
   },
   {
     "id": 2,
-    "name": "Pro Plan",
-    "description": "Ideal for growing teams who need more power and flexibility.",
-    "price": 29.99,
-    "period": "monthly",
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
     "tag": "Popular",
     "tagType": "popular",
-    "features": [
-      "Unlimited projects",
-      "100GB storage",
-      "Priority email support",
-      "Advanced analytics",
-      "API access",
-      "Custom integrations"
-    ],
-    "icon": "FaBolt"
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "FaPalette"
   },
   {
     "id": 3,
-    "name": "Business Plan",
-    "description": "Built for scaling businesses with advanced collaboration needs.",
-    "price": 79.99,
-    "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best-seller",
-    "features": [
-      "Unlimited projects",
-      "500GB storage",
-      "24/7 live support",
-      "Full analytics suite",
-      "API access",
-      "Custom integrations",
-      "Team management",
-      "SSO login"
-    ],
-    "icon": "FaBriefcase"
-  },
-  {
-    "id": 4,
-    "name": "Enterprise Plan",
-    "description": "Enterprise-grade solution for large organisations and agencies.",
-    "price": 199.99,
-    "period": "monthly",
-    "tag": "Premium",
-    "tagType": "premium",
-    "features": [
-      "Unlimited everything",
-      "5TB storage",
-      "Dedicated account manager",
-      "Custom reporting",
-      "On-premise deployment",
-      "SLA guarantee",
-      "Advanced security",
-      "Custom contracts"
-    ],
-    "icon": "FaBuilding"
-  },
-  {
-    "id": 5,
-    "name": "Annual Starter",
-    "description": "All Starter features at a discounted yearly rate.",
-    "price": 99.99,
-    "period": "yearly",
-    "tag": "Save 20%",
-    "tagType": "new",
-    "features": [
-      "5 projects",
-      "10GB storage",
-      "Email support",
-      "Basic analytics",
-      "API access"
-    ],
-    "icon": "FaCalendarAlt"
-  },
-  {
-    "id": 6,
-    "name": "Annual Pro",
-    "description": "All Pro features bundled into one great yearly price.",
-    "price": 299.99,
-    "period": "yearly",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": [
-      "Unlimited projects",
-      "100GB storage",
-      "Priority support",
-      "Advanced analytics",
-      "API access",
-      "Custom integrations"
-    ],
-    "icon": "FaStar"
-  },
-  {
-    "id": 7,
-    "name": "Lifetime Deal",
-    "description": "Pay once, use forever. No recurring fees, ever.",
-    "price": 499.99,
-    "period": "one-time",
-    "tag": "Limited",
-    "tagType": "best-seller",
-    "features": [
-      "Unlimited projects",
-      "200GB storage",
-      "Lifetime updates",
-      "Priority support",
-      "API access",
-      "All future features included"
-    ],
-    "icon": "FaInfinity"
-  },
-  {
-    "id": 8,
-    "name": "Student Plan",
-    "description": "Affordable plan designed specifically for students and educators.",
-    "price": 4.99,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
     "period": "monthly",
     "tag": "New",
     "tagType": "new",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "icon": "FaCamera"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "icon": "FaCogs"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "icon": "FaHashtag"
+  },
+  {
+    "id": 7,
+    "name": "SEO Booster Suite",
+    "description": "Rank higher on Google with powerful keyword research and site audit tools.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
     "features": [
-      "3 projects",
-      "5GB storage",
-      "Community support",
-      "Basic analytics",
-      "Education resources"
+      "Keyword research",
+      "Site audit reports",
+      "Competitor analysis",
+      "Backlink tracker"
     ],
-    "icon": "FaGraduationCap"
+    "icon": "FaSearchDollar"
+  },
+  {
+    "id": 8,
+    "name": "Video Editing Pro",
+    "description": "Edit stunning videos with professional-grade tools right in your browser.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "4K export",
+      "500+ transitions",
+      "AI background remover",
+      "Cloud storage"
+    ],
+    "icon": "FaVideo"
   },
   {
     "id": 9,
-    "name": "Agency Plan",
-    "description": "Manage multiple clients and campaigns under one roof.",
-    "price": 149.99,
+    "name": "Email Marketing Kit",
+    "description": "Grow and engage your audience with beautiful email campaigns and automations.",
+    "price": 25,
     "period": "monthly",
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": [
-      "50 client workspaces",
-      "1TB storage",
-      "White-label branding",
-      "Client reporting",
-      "Team roles & permissions",
-      "Priority support",
-      "API access"
+      "Unlimited emails",
+      "Drag & drop builder",
+      "A/B testing",
+      "Advanced analytics"
     ],
-    "icon": "FaLayerGroup"
+    "icon": "FaEnvelopeOpenText"
   },
   {
     "id": 10,
-    "name": "Free Forever",
-    "description": "Get started for free with no credit card required.",
-    "price": 0,
+    "name": "Developer Tools Bundle",
+    "description": "Everything a developer needs — code snippets, UI kits, and productivity extensions.",
+    "price": 89,
     "period": "one-time",
-    "tag": "Free",
+    "tag": "New",
     "tagType": "new",
     "features": [
-      "1 project",
-      "1GB storage",
-      "Community support",
-      "Basic analytics"
+      "500+ code snippets",
+      "UI component library",
+      "VS Code extensions",
+      "Lifetime updates"
     ],
-    "icon": "FaGift"
+    "icon": "FaCode"
   }
 ]
