@@ -10,8 +10,11 @@ const Card = ({ product }) => {
   };
 
   return (
+    // used hover effect that already used in toggle button to keep look same
     <div
-      className={`flex flex-col p-4 border-2  border-gray-300  bg-purple-50  rounded-2xl gap-3 relative h-full`}
+      className="flex flex-col p-4 border-2  border-gray-300  bg-purple-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5
+        md:hover:shadow-[0_7px_20px_-7px_#4F39F6]
+       md:hover:border-purple-300"
     >
       {/* top */}
       <div className="flex flex-col gap-3">
@@ -52,7 +55,7 @@ const Card = ({ product }) => {
 
       <div className="space-y-4 flex flex-col mt-auto">
         <div
-          className={`absolute top-2 right-2 ${tagStyles[product.tag]}  py-1 px-4 rounded-2xl`}
+          className={`absolute top-2 right-2 ${tagStyles[product.tag]}  py-1 px-4 rounded-2xl border`}
         >
           <p className="text-sm">{product.tag}</p>
         </div>
