@@ -29,7 +29,13 @@ const Cart = ({ cart, cartItem, setCartItem, isBought, setIsBought }) => {
   };
   console.log(cartItem.length);
   return (
-    <div className="py-3 px-3 lg:px-4 rounded-xl lg:rounded-4xl bg-purple-50 flex justify-between items-center border border-purple-200">
+    <div
+      className="py-3 px-3 lg:px-4 rounded-xl lg:rounded-4xl bg-purple-50 flex justify-between items-center border border-purple-200
+    md:hover:-translate-y-0.5 
+        md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
+       md:hover:border-purple-300
+    "
+    >
       {/* icon and name section */}
       <div className="flex flex-row justify-center items-center gap-3">
         {/* cart icon */}
@@ -40,7 +46,7 @@ const Cart = ({ cart, cartItem, setCartItem, isBought, setIsBought }) => {
         <div className="flex flex-col justify-start items-start">
           <h3 className="font-medium text-base lg:text-xl">{cart.name}</h3>
           <p className="font-medium text-sm md:text-base text-[#627382]">
-            {cart.price}
+            £{cart.price}
           </p>
         </div>
       </div>

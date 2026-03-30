@@ -2,6 +2,7 @@ import React, { use } from "react";
 import Card from "../UI/Card";
 import Cart from "../UI/Cart";
 import EmptyCart from "../UI/EmptyCart";
+import { toast } from "react-toastify";
 
 const CardSection = ({
   toggleHandler,
@@ -12,6 +13,9 @@ const CardSection = ({
   isBought,
   setIsBought,
 }) => {
+  const totalCartPrice = cartItem.reduce((totalPrice, eachItem) => {
+    return totalPrice + eachItem.price;
+  }, 0);
   const products = use(productsList);
   const buttonHandler = (type) => {
     if (type === "Products") {
@@ -20,6 +24,15 @@ const CardSection = ({
     if (type === "Cart") {
       setToggleHandler("Cart");
     }
+  };
+
+  const proceedToCheckout = () => {
+    setCartItem([]);
+    setIsBought([]);
+
+    toast.success("Checkout successful!", {
+      pauseOnHover: false,
+    });
   };
   return (
     <section className="w-full py-12 lg:p-y-20 px-0 md:px-4 ">
@@ -64,7 +77,7 @@ const CardSection = ({
           </div>
         </div>
         {toggleHandler === "Products" ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 items-stretch">
             {products.map((product) => (
               <Card
                 product={product}
@@ -101,8 +114,24 @@ const CardSection = ({
                       setIsBought={setIsBought}
                     ></Cart>
                   ))}
-                  <div className="text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]">
-                    proceeded
+                  <div>
+                    <div className="flex justify-between items-center mt-10">
+                      <p className="text-[#627382]">Total:</p>
+                      <p className="font-semibold text-base  md:text-2xl">
+                        £{totalCartPrice}
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => {
+                        proceedToCheckout();
+                      }}
+                      className="text-sm lg:text-base font-bold w-full rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r
+                      from-[#4F39F6] to-[#9514FA] text-white cursor-pointer md:hover:-translate-y-0.5 
+                      md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
+                    md:hover:border-purple-300 mt-5 flex justify-center items-center"
+                    >
+                      Proceed to Checkout
+                    </button>
                   </div>
                 </>
               )}
