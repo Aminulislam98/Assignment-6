@@ -113,16 +113,19 @@ const Navbar = ({ cartItem }) => {
                     className="menu menu-md dropdown-content   bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0 "
                   >
                     <li>
-                      <a>Home</a>
+                      <a className="cursor-pointer">Products</a>
                     </li>
                     <li>
-                      <a>Fixture</a>
+                      <a className="cursor-pointer">Features</a>
                     </li>
                     <li>
-                      <a>Teams</a>
+                      <a className="cursor-pointer">Pricing</a>
                     </li>
                     <li>
-                      <a>Schedules</a>
+                      <a className="cursor-pointer">Testimonials</a>
+                    </li>
+                    <li>
+                      <a className="cursor-pointer">FAQ</a>
                     </li>
                   </ul>
                 </div>
