@@ -1,3 +1,4 @@
+import React from "react";
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
 const CardFeature = ({ feature }) => {
