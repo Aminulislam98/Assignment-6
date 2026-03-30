@@ -11,7 +11,7 @@ import WorkFlow from "./WorkFlow/WorkFlow";
 import Footer from "./Footer/Footer";
 
 const productsData = async () => {
-  const response = await fetch("/public/productsData.json");
+  const response = await fetch("/productsData.json");
   return response.json();
 };
 const productsList = productsData();
