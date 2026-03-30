@@ -1,0 +1,17 @@
+import React from "react";
+
+const EmptyCart = () => {
+  return (
+    <div className="bg-red-50  flex justify-center items-center flex-col py-10 border border-red-600 rounded-2xl">
+      <h2 className="font-bold text-xl lg:text-2xl text-red-600">
+        Your Cart is empty
+      </h2>
+      <h1 className="font-semibold text-sm lg:text-base text-red-600">
+        Please go to products section to buy tools
+      </h1>
+    </div>
+  );
+};
+
+export default EmptyCart;
+<h2>Your Cart is empty</h2>;

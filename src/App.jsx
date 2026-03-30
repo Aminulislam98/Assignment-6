@@ -12,6 +12,7 @@ const productsData = async () => {
 const productsList = productsData();
 
 function App() {
+  const [cartItem, setCartItem] = useState([]);
   const [toggleHandler, setToggleHandler] = useState("Products");
   return (
     <>
@@ -22,6 +23,8 @@ function App() {
         toggleHandler={toggleHandler}
         setToggleHandler={setToggleHandler}
         productsList={productsList}
+        cartItem={cartItem}
+        setCartItem={setCartItem}
       ></CardSection>
     </>
   );

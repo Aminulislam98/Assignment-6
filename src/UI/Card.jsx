@@ -1,13 +1,17 @@
 import React from "react";
 
 import CardFeature from "./CardFeature";
-import { FaMagic, FaSwatchbook } from "react-icons/fa";
+// import { FaMagic, FaSwatchbook } from "react-icons/fa";
 
-const Card = ({ product }) => {
+const Card = ({ product, cartItem, setCartItem }) => {
   const tagStyles = {
     New: "bg-green-100 text-green-600",
     Popular: "bg-purple-100 text-purple-600",
     "Best Seller": "bg-yellow-100 text-yellow-600",
+  };
+
+  const addToCart = (id) => {
+    setCartItem([...cartItem, id]);
   };
 
   return (
@@ -50,7 +54,12 @@ const Card = ({ product }) => {
       <div className="flex flex-col  grow">
         {/* button to buy */}
         <div className="mt-auto">
-          <button className="w-full text-base font-bold rounded-4xl py-2 md:py-3 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]">
+          <button
+            onClick={() => {
+              addToCart(product);
+            }}
+            className="w-full text-base font-bold rounded-4xl py-2 md:py-3 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]"
+          >
             Buy Now
           </button>
         </div>
