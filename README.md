@@ -1,16 +1,28 @@
-# React + Vite
+# ToolNest - Digital Product Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web app where users can browse digital products like AI tools, design assets,
+and productivity software. They can add products to a cart and purchase them.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- Tailwind CSS
+- DaisyUI
+- React Toastify
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Users can add products to the cart and see the total
+- Users can switch between All Products and Purchased tabs
+- Each product shows its price, tag (Best Seller, Popular, New) and features
 
-## Expanding the ESLint configuration
+## Live Site
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://your-netlify-link.netlify.app
+
+## How to Run
+
+1. Clone the repository
+2. Run npm install
+3. Run npm run dev
