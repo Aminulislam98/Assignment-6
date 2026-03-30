@@ -17,7 +17,11 @@ const Step = () => {
 
         {/* bottom section */}
         <div className=" mt-2 lg:mt-4 flex wrap flex-col sm:flex-row justify-between gap-4  items-stretch w-full">
-          <div className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-5 ">
+          <div
+            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-5 md:hover:-translate-y-0.5 
+        md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
+       md:hover:border-purple-300 cursor-pointer"
+          >
             {/* image section */}
             <div className="bg-purple-200 rounded-full p-2.5 md:p-5">
               <img
@@ -31,11 +35,15 @@ const Step = () => {
               Sign up for free in seconds. No credit card <br /> required to get
               started.
             </p>
-            <div className="w-7 h-7 absolute top-2 right-2 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center items-center text-white font-semibold text-sm ">
+            <div className="w-7 h-7 absolute top-3 right-3 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center items-center text-white font-semibold text-sm ">
               <p>01</p>
             </div>
           </div>
-          <div className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-5">
+          <div
+            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-5 cursor-pointer md:hover:-translate-y-0.5 
+        md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
+       md:hover:border-purple-300"
+          >
             {/* image section */}
             <div className="bg-purple-200 rounded-full p-2.5 md:p-5">
               <img
@@ -49,11 +57,15 @@ const Step = () => {
               Browse our catalog and select the tools <br />
               that fit your needs.
             </p>
-            <div className="w-7 h-7 absolute top-2 right-2 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center items-center text-white font-semibold text-sm ">
+            <div className="w-7 h-7 absolute top-3 right-3 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center items-center text-white font-semibold text-sm ">
               <p>02</p>
             </div>
           </div>
-          <div className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-5">
+          <div
+            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-5 md:hover:-translate-y-0.5 cursor-pointer 
+        md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
+       md:hover:border-purple-300"
+          >
             {/* image section */}
             <div className="bg-purple-200 rounded-full p-2.5 md:p-5">
               <img
@@ -66,7 +78,7 @@ const Step = () => {
             <p className="font-normal text-sm  text-center">
               Download and start using your premium <br /> tools immediately.
             </p>
-            <div className="w-7 h-7 absolute top-2 right-2 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center items-center text-white font-semibold text-sm ">
+            <div className="w-7 h-7 absolute top-3 right-3 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center items-center text-white font-semibold text-sm ">
               <p>03</p>
             </div>
           </div>
