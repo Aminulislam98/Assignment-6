@@ -6,9 +6,9 @@ import { toast } from "react-toastify";
 const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
   const isItemBought = isBought.includes(product.name);
   const tagStyles = {
-    New: "bg-green-100 text-green-600",
-    Popular: "bg-purple-100 text-purple-600",
-    "Best Seller": "bg-yellow-100 text-yellow-600",
+    new: "bg-green-100 text-green-600",
+    popular: "bg-purple-100 text-purple-600",
+    "best-seller": "bg-yellow-100 text-yellow-600",
   };
 
   const addToCart = (id) => {
@@ -83,7 +83,7 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
 
       <div className="space-y-4 flex flex-col mt-auto">
         <div
-          className={`absolute top-2 right-2 ${tagStyles[product.tag]}  py-1 px-4 rounded-2xl border`}
+          className={`absolute top-2 right-2 ${tagStyles[product.tagType]}  py-1 px-4 rounded-2xl border`}
         >
           <p className="text-sm">{product.tag}</p>
         </div>
