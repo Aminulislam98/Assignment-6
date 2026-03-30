@@ -7,6 +7,7 @@ import Stats from "./Stats/Stats";
 import { ToastContainer } from "react-toastify";
 import Step from "./Steps/Step";
 import TransperPrice from "./TransparentPricing/TransperPrice";
+import WorkFlow from "./WorkFlow/WorkFlow";
 
 const productsData = async () => {
   const response = await fetch("/public/productsData.json");
@@ -35,6 +36,7 @@ function App() {
       ></CardSection>
       <Step></Step>
       <TransperPrice></TransperPrice>
+      <WorkFlow></WorkFlow>
       <ToastContainer></ToastContainer>
     </>
   );
