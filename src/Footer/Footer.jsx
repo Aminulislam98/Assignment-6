@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <section className="">
+    <section className="bg-[#101727] ">
       <footer
         className="footer sm:footer-horizontal text-white 
         p-10 bg-[#101727] mx-auto"
@@ -36,7 +36,7 @@ const Footer = () => {
           <a className="link link-hover text-white/80">Contact</a>
         </nav>
         <nav className="flex flex-col justify-center items-center w-full md:justify-end md:items-end">
-          <h6 className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-xl font-semibold">
+          <h6 className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-xl font-semibold ">
             SocialLinks
           </h6>
           <div className="grid grid-flow-col gap-2">
@@ -76,6 +76,16 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
+      <div className="flex flex-col gap-2 lg:gap-0 md:flex-row  justify-between items-center  text-white/50 font-extralight border-t border-t-gray-700 py-4 md:py-7.5 md:px-9 ">
+        <div className="text-xs md:text-sm">
+          © 2026 Digi tools. All rights reserved.
+        </div>
+        <div className="flex flex-row justify-center items-center space-x-4 md:space-x-5 text-xs md:text-sm text-white/50">
+          <p>Privacy Policy</p>
+          <p>Terms of Service </p>
+          <p>Cookies</p>
+        </div>
+      </div>
     </section>
   );
 };
