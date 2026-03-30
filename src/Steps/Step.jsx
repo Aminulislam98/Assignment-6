@@ -7,7 +7,7 @@ const Step = () => {
       <div className="max-w-7xl w-full mx-auto flex justify-center items-center flex-col md:space-y-8  space-y-4">
         {/* top section */}
         <div className="flex flex-col justify-center items-center">
-          <h1 className=" text-center font-semibold lg:font-extrabold  text-2xl md:text-3xl lg:text-5xl lg:mb-4 mb-2">
+          <h1 className=" text-center font-bold lg:font-extrabold  text-2xl md:text-3xl lg:text-5xl lg:mb-4 mb-2">
             Get Started In 3 Steps
           </h1>
           <p className="font-normal text-sm md:text-base text-center">

@@ -8,7 +8,7 @@ const TransperPrice = () => {
       <div className="max-w-7xl w-full mx-auto flex justify-center items-center flex-col space-y-6  md:space-y-10 ">
         {/* top section */}
         <div className="flex flex-col justify-center items-center">
-          <h1 className=" font-semibold lg:font-extrabold  text-2xl md:text-3xl lg:text-5xl lg:mb-4 mb-2">
+          <h1 className="font-bold lg:font-extrabold  text-2xl md:text-3xl lg:text-5xl lg:mb-4 mb-2">
             Simple, Transparent Pricing
           </h1>
           <p className="font-normal text-sm  md:text-base text-center">
