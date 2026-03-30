@@ -2,8 +2,7 @@ import React from "react";
 import { MdDelete } from "react-icons/md";
 import { toast } from "react-toastify";
 
-const Cart = ({ cart, cartItem, setCartItem, isBought, setIsBought }) => {
-  console.log(cartItem.length);
+const Cart = ({ cart, cartItem, setCartItem, setIsBought }) => {
   const deleteItem = (id) => {
     const exist = cartItem.find((item) => item.id === id.id);
     if (exist) {
@@ -25,9 +24,7 @@ const Cart = ({ cart, cartItem, setCartItem, isBought, setIsBought }) => {
         });
       }
     }
-    console.log(cartItem.length);
   };
-  console.log(cartItem.length);
   return (
     <div
       className="py-3 px-3 lg:px-4 rounded-xl lg:rounded-4xl bg-purple-50 flex justify-between items-center border border-purple-200

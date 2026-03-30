@@ -60,8 +60,8 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
         </div>
         {/* featured */}
         <div>
-          {product.features.map((feature) => (
-            <CardFeature feature={feature}></CardFeature>
+          {product.features.map((feature, index) => (
+            <CardFeature key={index} feature={feature}></CardFeature>
           ))}
         </div>
       </div>
