@@ -72,7 +72,7 @@ const Navbar = ({ cartItem }) => {
                 {/* login section */}
 
                 <button
-                  className="cursor-pointer flex justify-center self-center items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100  text-black
+                  className="cursor-pointer flex justify-center self-center items-center  font-semibold gap-2 py-1 px-2 md:py-2 md:px-3 border rounded-md lg:rounded-3xl border-gray-200 text-sm md:text-base hover:bg-gray-100  text-black transition-all duration-300 ease-in-out
              "
                 >
                   Login

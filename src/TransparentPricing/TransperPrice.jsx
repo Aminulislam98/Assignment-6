@@ -23,7 +23,7 @@ const TransperPrice = () => {
             className="flex w-full flex-col p-4 border-2  border-gray-100
                 bg-gray-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
                 md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
-            md:hover:border-purple-300 
+            md:hover:border-purple-300  transition-all duration-300 ease-in-out
         "
           >
             {/* top */}
@@ -89,7 +89,7 @@ const TransperPrice = () => {
                   rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
                 md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
             md:hover:border-purple-300  text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] 
-            
+            transition-all duration-300 ease-in-out
         "
           >
             {/* top */}
@@ -160,7 +160,7 @@ const TransperPrice = () => {
             className="flex w-full flex-col p-4 border-2  border-gray-100
                 bg-gray-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
                 md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
-            md:hover:border-purple-300 
+            md:hover:border-purple-300  transition-all duration-300 ease-in-out
         "
           >
             {/* top */}

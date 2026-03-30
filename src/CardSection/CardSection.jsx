@@ -55,8 +55,8 @@ const CardSection = ({
                 }}
                 className={
                   toggleHandler === "Products"
-                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]"
-                    : "text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer hover:bg-[#4F39F6]/10 hover:text-[#9514FA]"
+                    ? "text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6] transition-all duration-300 ease-in-out"
+                    : "text-base font-bold rounded-4xl py-2 md:py-3.5 px-6 border border-gray-300 text-black cursor-pointer hover:bg-[#4F39F6]/10 hover:text-[#9514FA] transition-all duration-300 ease-in-out"
                 }
               >
                 Products
@@ -129,7 +129,7 @@ const CardSection = ({
                       className="text-sm lg:text-base font-bold w-full rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r
                       from-[#4F39F6] to-[#9514FA] text-white cursor-pointer md:hover:-translate-y-0.5 
                       md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
-                    md:hover:border-purple-300 mt-5 flex justify-center items-center"
+                    md:hover:border-purple-300 mt-5 flex justify-center items-center transition-all duration-300 ease-in-out"
                     >
                       Proceed to Checkout
                     </button>

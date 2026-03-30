@@ -31,12 +31,13 @@ const Cart = ({ cart, cartItem, setCartItem, setIsBought }) => {
     md:hover:-translate-y-0.5 
         md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
        md:hover:border-purple-300
+       transition-all duration-300 ease-in-out
     "
     >
       {/* icon and name section */}
       <div className="flex flex-row justify-center items-center gap-3">
         {/* cart icon */}
-        <div className="text-xl md:text-3xl border border-gray-200 p-2 rounded-full w-12 h-12 md:w-15 md:h-15 flex justify-center items-center cursor-pointer hover:bg-purple-100 ">
+        <div className="text-xl md:text-3xl border border-gray-200 p-2 rounded-full w-12 h-12 md:w-15 md:h-15 flex justify-center items-center cursor-pointer hover:bg-purple-100 transition-all duration-300 ease-in-out">
           {cart.icon}
         </div>
         {/* cart name and price */}
@@ -54,9 +55,9 @@ const Cart = ({ cart, cartItem, setCartItem, setIsBought }) => {
           onClick={() => {
             deleteItem(cart);
           }}
-          className="border-2 rounded-full p-1 md:p-2 border-red-200 hover:bg-red-200 hover:border-red-300"
+          className="border-2 rounded-full p-1 md:p-2 border-red-200 hover:bg-red-200 hover:border-red-300 transition-all duration-300 ease-in-out"
         >
-          <MdDelete className="text-red-600 w-5 md:w-6 h-5 md:h-6" />
+          <MdDelete className="text-red-600 w-5 md:w-6 h-5 md:h-6 " />
         </button>
       </div>
     </div>

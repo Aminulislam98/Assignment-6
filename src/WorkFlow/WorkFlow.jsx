@@ -18,7 +18,7 @@ const WorkFlow = () => {
               Explore Products
             </span>
           </button>
-          <button className="lg:w-auto cursor-pointer flex flex-row justify-center items-center md:py-2 py-1 px-4 md:px-4 font-semibold text-base rounded-3xl gap-2.5 border border-white  text-white hover:bg-white hover:text-[#9514FA]">
+          <button className="lg:w-auto cursor-pointer flex flex-row justify-center items-center md:py-2 py-1 px-4 md:px-4 font-semibold text-base rounded-3xl gap-2.5 border border-white  text-white hover:bg-white hover:text-[#9514FA] transition-all duration-300 ease-in-out">
             View Pricing
           </button>
         </div>
