@@ -85,7 +85,12 @@ const CardSection = ({
             ) : (
               <>
                 {cartItem.map((cart) => (
-                  <Cart key={cart.id} cart={cart}></Cart>
+                  <Cart
+                    key={cart.id}
+                    cart={cart}
+                    setCartItem={setCartItem}
+                    cartItem={cartItem}
+                  ></Cart>
                 ))}
               </>
             )}

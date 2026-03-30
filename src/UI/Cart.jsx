@@ -1,7 +1,15 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, cartItem, setCartItem }) => {
+  const deleteItem = (id) => {
+    const exist = cartItem.find((item) => item.id === id.id);
+    if (exist) {
+      setCartItem((prevCarts) => {
+        return prevCarts.filter((prevCartsItem) => prevCartsItem.id !== id.id);
+      });
+    }
+  };
   return (
     <div className="py-3 px-3 lg:px-4 rounded-xl lg:rounded-3xl bg-purple-50 flex justify-between items-center border border-purple-200">
       {/* icon and name section */}
@@ -21,7 +29,12 @@ const Cart = ({ cart }) => {
       {/* delete section */}
       <div>
         {/* delete button */}
-        <button className="border-2 rounded-full p-1 md:p-2 border-red-200 hover:bg-red-200 hover:border-red-300">
+        <button
+          onClick={() => {
+            deleteItem(cart);
+          }}
+          className="border-2 rounded-full p-1 md:p-2 border-red-200 hover:bg-red-200 hover:border-red-300"
+        >
           <MdDelete className="text-red-600 w-5 md:w-6 h-5 md:h-6" />
         </button>
       </div>
