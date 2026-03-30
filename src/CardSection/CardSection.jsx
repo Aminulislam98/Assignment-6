@@ -93,6 +93,8 @@ const CardSection = ({
                       cart={cart}
                       setCartItem={setCartItem}
                       cartItem={cartItem}
+                      isBought={isBought}
+                      setIsBought={setIsBought}
                     ></Cart>
                   ))}
                 </>

@@ -1,13 +1,18 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
+import { toast } from "react-toastify";
 
-const Cart = ({ cart, cartItem, setCartItem }) => {
+const Cart = ({ cart, cartItem, setCartItem, isBought, setIsBought }) => {
   const deleteItem = (id) => {
     const exist = cartItem.find((item) => item.id === id.id);
     if (exist) {
       setCartItem((prevCarts) => {
         return prevCarts.filter((prevCartsItem) => prevCartsItem.id !== id.id);
       });
+      setIsBought((prevName) => {
+        return prevName.filter((pName) => pName !== id.name);
+      });
+      toast.success("Removed from your cart.");
     }
   };
   return (

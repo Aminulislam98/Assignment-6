@@ -24,9 +24,11 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
   return (
     // used hover effect that already used in toggle button to keep look same
     <div
-      className="flex flex-col p-4 border-2  border-purple-100  bg-purple-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5
-        md:hover:shadow-[0_7px_20px_-7px_#4F39F6]
-       md:hover:border-purple-300"
+      className="flex flex-col p-4 border-2  border-purple-100
+        bg-purple-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
+        md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
+       md:hover:border-purple-300
+        "
     >
       {/* top */}
       <div className="flex flex-col gap-3">
@@ -65,7 +67,12 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
             onClick={() => {
               addToCart(product);
             }}
-            className="w-full text-base font-bold rounded-4xl py-2 md:py-3 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]"
+            disabled={isItemBought}
+            className={`w-full text-base font-bold rounded-4xl py-2 md:py-3 px-6  ${
+              isItemBought
+                ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
+                : " bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent border-2 border-[#4F39F6]/20 hover:shadow-[0_2px_10px_-4px_#4F39F6]"
+            } cursor-pointer  bg-purple-100`}
           >
             {isItemBought ? "Added to Cart" : "Buy Now"}
           </button>
@@ -84,6 +91,3 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
 };
 
 export default Card;
-<div>
-  <h2>HI</h2>
-</div>;
