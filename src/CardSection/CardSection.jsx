@@ -35,7 +35,7 @@ const CardSection = ({
     });
   };
   return (
-    <section className="w-full py-12 lg:p-y-20 px-0 md:px-4 ">
+    <section className="w-full py-12 lg:p-y-20 px-0 md:px-2 ">
       <div className="max-w-7xl w-full mx-auto px-2 lg:px-0 space-y-10">
         {/* top section */}
         <div className="w-full mx-auto flex flex-col justify-center items-center ">

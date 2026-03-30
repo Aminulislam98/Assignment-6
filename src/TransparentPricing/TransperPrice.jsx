@@ -4,20 +4,20 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 
 const TransperPrice = () => {
   return (
-    <section className="bg-pu py-15 lg:py-30 px-2 mt-20  ">
-      <div className="max-w-7xl w-full mx-auto flex justify-center items-center flex-col  space-y-4">
+    <section className=" py-7 md:py-10 lg:py-25 px-2 md:px-4   ">
+      <div className="max-w-7xl w-full mx-auto flex justify-center items-center flex-col space-y-6  md:space-y-10 ">
         {/* top section */}
         <div className="flex flex-col justify-center items-center">
-          <h1 className=" font-semibold lg:font-extrabold  text-2xl lg:text-5xl lg:mb-4 mb-2">
+          <h1 className=" font-semibold lg:font-extrabold  text-2xl md:text-3xl lg:text-5xl lg:mb-4 mb-2">
             Simple, Transparent Pricing
           </h1>
-          <p className="font-normal text-base">
+          <p className="font-normal text-sm  md:text-base text-center">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
 
         {/* bottom section */}
-        <div className=" mt-2 lg:mt-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 sm:flex-row justify-between md:gap-4 gap-2 items-stretch w-full h-full ">
+        <div className=" mt-2 lg:mt-4 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 sm:flex-row justify-between md:gap-1 gap-7 lg:gap-4 items-stretch w-full h-full ">
           {/* first pricing card */}
           <div
             className="flex w-full flex-col p-4 border-2  border-gray-100
