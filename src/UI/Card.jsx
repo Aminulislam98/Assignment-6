@@ -1,6 +1,7 @@
 import React from "react";
 
 import CardFeature from "./CardFeature";
+import { FaMagic, FaSwatchbook } from "react-icons/fa";
 
 const Card = ({ product }) => {
   const tagStyles = {
@@ -12,7 +13,7 @@ const Card = ({ product }) => {
   return (
     // used hover effect that already used in toggle button to keep look same
     <div
-      className="flex flex-col p-4 border-2  border-gray-300  bg-purple-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5
+      className="flex flex-col p-4 border-2  border-purple-100  bg-purple-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5
         md:hover:shadow-[0_7px_20px_-7px_#4F39F6]
        md:hover:border-purple-300"
     >
@@ -20,7 +21,9 @@ const Card = ({ product }) => {
       <div className="flex flex-col gap-3">
         {/* icon */}
         <div className=" mb-2 md:mb-4">
-          <img src="" alt="ProductImage" />
+          <div className="text-4xl border border-gray-200 p-2 rounded-full max-w-15 max-h-15 flex justify-center items-center cursor-pointer hover:bg-purple-100 hover:text-[40px]">
+            {product.icon}
+          </div>
         </div>
         {/* name */}
         <h2 className="font-bold text-2xl">{product.name}</h2>
