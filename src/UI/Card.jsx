@@ -1,6 +1,7 @@
 import React from "react";
 
 import CardFeature from "./CardFeature";
+import { toast } from "react-toastify";
 // import { FaMagic, FaSwatchbook } from "react-icons/fa";
 
 const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
@@ -12,10 +13,15 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
   };
 
   const addToCart = (id) => {
-    setCartItem([...cartItem, id]);
-    setIsBought((prevName) => {
-      return [...prevName, id.name];
-    });
+    if (id) {
+      setCartItem([...cartItem, id]);
+      setIsBought((prevName) => {
+        return [...prevName, id.name];
+      });
+      toast.success("Added to your cart.", {
+        pauseOnHover: false,
+      });
+    }
   };
 
   // isBought = { isBought };

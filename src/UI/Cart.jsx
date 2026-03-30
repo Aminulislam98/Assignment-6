@@ -3,20 +3,33 @@ import { MdDelete } from "react-icons/md";
 import { toast } from "react-toastify";
 
 const Cart = ({ cart, cartItem, setCartItem, isBought, setIsBought }) => {
+  console.log(cartItem.length);
   const deleteItem = (id) => {
     const exist = cartItem.find((item) => item.id === id.id);
     if (exist) {
-      setCartItem((prevCarts) => {
-        return prevCarts.filter((prevCartsItem) => prevCartsItem.id !== id.id);
-      });
+      const updatedCart = cartItem.filter(
+        (prevCartsItem) => prevCartsItem.id !== id.id,
+      );
+      setCartItem(updatedCart);
+
       setIsBought((prevName) => {
         return prevName.filter((pName) => pName !== id.name);
       });
-      toast.success("Removed from your cart.");
+
+      toast.success("Removed from your cart.", {
+        pauseOnHover: false,
+      });
+      if (updatedCart.length === 0) {
+        toast.error("Oops! Your cart is empty.", {
+          pauseOnHover: false,
+        });
+      }
     }
+    console.log(cartItem.length);
   };
+  console.log(cartItem.length);
   return (
-    <div className="py-3 px-3 lg:px-4 rounded-xl lg:rounded-3xl bg-purple-50 flex justify-between items-center border border-purple-200">
+    <div className="py-3 px-3 lg:px-4 rounded-xl lg:rounded-4xl bg-purple-50 flex justify-between items-center border border-purple-200">
       {/* icon and name section */}
       <div className="flex flex-row justify-center items-center gap-3">
         {/* cart icon */}

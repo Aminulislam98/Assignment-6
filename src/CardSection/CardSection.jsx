@@ -76,10 +76,14 @@ const CardSection = ({
             ))}
           </div>
         ) : (
-          <div className="border border-gray-200 px-2 py-3 lg:p-4 rounded-xl space-y-4 lg:space-y-6 ">
-            <h2 className="font-semibold md:font-bold text-xl md:text-2xl flex justify-center items-center md:justify-start md:items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
-              Your Cart
-            </h2>
+          <div className="border border-gray-200 px-2 py-3 lg:p-4 rounded-4xl space-y-4 lg:space-y-6 ">
+            {cartItem.length === 0 ? (
+              ""
+            ) : (
+              <h2 className="font-semibold md:font-bold text-xl md:text-2xl flex justify-center items-center md:justify-start md:items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+                Your Cart
+              </h2>
+            )}
             <div className=" gap-2 items-stretch flex flex-col">
               {cartItem.length === 0 ? (
                 <>
@@ -108,5 +112,3 @@ const CardSection = ({
 };
 
 export default CardSection;
-<div>top</div>;
-// text-base font-bold   rounded-4xl py-2 md:py-3.5 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer
