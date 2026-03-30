@@ -2,7 +2,6 @@ import React from "react";
 
 import CardFeature from "./CardFeature";
 import { toast } from "react-toastify";
-// import { FaMagic, FaSwatchbook } from "react-icons/fa";
 
 const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
   const isItemBought = isBought.includes(product.name);
@@ -23,9 +22,6 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
       });
     }
   };
-
-  // isBought = { isBought };
-  // setIsBought = { setIsBought };
 
   return (
     // used hover effect that already used in toggle button to keep look same
