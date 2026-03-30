@@ -103,7 +103,7 @@ const TransperPrice = () => {
             <div className="flex flex-col gap-3 mb-6">
               {/* price and period */}
               <div className="text-white/90">
-                <span className="h-full font-bold text-3xl md:text-4xl">
+                <span className="h-full font-bold text-3xl md:text-4xl text-white">
                   £29
                 </span>
                 <span className="text-base ">/Month</span>

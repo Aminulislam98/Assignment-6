@@ -1,3 +1,4 @@
+import React from "react";
 import step1 from "../assets/stepPhoto/step1.png";
 import step2 from "../assets/stepPhoto/step2.png";
 import step3 from "../assets/stepPhoto/step3.png";

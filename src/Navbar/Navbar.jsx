@@ -1,3 +1,4 @@
+import React from "react";
 const Navbar = ({ cartItem }) => {
   return (
     <div className=" sticky top-0 z-50">
@@ -16,19 +17,19 @@ const Navbar = ({ cartItem }) => {
                 tabIndex="-1"
                 className="flex flex-row space-x-12 text-base text-[#101727]"
               >
-                <li>
-                  <a className="cursor-pointer">Products</a>
+                <li className="lg:border-b-2 lg:border-transparent lg:hover:border-b-2 lg:hover:border-b-purple-600 transition-colors duration-200">
+                  <a className="cursor-pointer ">Products</a>
                 </li>
-                <li>
+                <li className="lg:border-b-2 lg:border-transparent lg:hover:border-b-2 lg:hover:border-b-purple-600 transition-colors duration-200">
                   <a className="cursor-pointer">Features</a>
                 </li>
-                <li>
+                <li className="lg:border-b-2 lg:border-transparent lg:hover:border-b-2 lg:hover:border-b-purple-600 transition-colors duration-200">
                   <a className="cursor-pointer">Pricing</a>
                 </li>
-                <li>
+                <li className="lg:border-b-2 lg:border-transparent lg:hover:border-b-2 lg:hover:border-b-purple-600 transition-colors duration-200">
                   <a className="cursor-pointer">Testimonials</a>
                 </li>
-                <li>
+                <li className="lg:border-b-2 lg:border-transparent lg:hover:border-b-2 lg:hover:border-b-purple-600 transition-colors duration-200">
                   <a className="cursor-pointer">FAQ</a>
                 </li>
               </ul>
