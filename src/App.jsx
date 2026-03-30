@@ -14,6 +14,8 @@ const productsList = productsData();
 function App() {
   const [cartItem, setCartItem] = useState([]);
   const [toggleHandler, setToggleHandler] = useState("Products");
+  const [isBought, setIsBought] = useState([]);
+
   return (
     <>
       <Navbar></Navbar>
@@ -25,6 +27,8 @@ function App() {
         productsList={productsList}
         cartItem={cartItem}
         setCartItem={setCartItem}
+        isBought={isBought}
+        setIsBought={setIsBought}
       ></CardSection>
     </>
   );

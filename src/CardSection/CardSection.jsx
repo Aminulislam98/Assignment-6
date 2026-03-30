@@ -9,9 +9,10 @@ const CardSection = ({
   productsList,
   cartItem,
   setCartItem,
+  isBought,
+  setIsBought,
 }) => {
   const products = use(productsList);
-
   const buttonHandler = (type) => {
     if (type === "Products") {
       setToggleHandler("Products");
@@ -62,40 +63,43 @@ const CardSection = ({
             </div>
           </div>
         </div>
-        {/* card container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-stretch">
-          {products.map((product) => (
-            <Card
-              product={product}
-              cartItem={cartItem}
-              setCartItem={setCartItem}
-            ></Card>
-          ))}
-        </div>
-        {/* Cart section */}
-        <div className="border border-gray-200 px-2 py-3 lg:p-4 rounded-xl space-y-4 lg:space-y-6 ">
-          <h2 className="font-semibold md:font-bold text-xl md:text-2xl flex justify-center items-center md:justify-start md:items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
-            Your Cart
-          </h2>
-          <div className=" gap-2 items-stretch flex flex-col">
-            {cartItem.length === 0 ? (
-              <>
-                <EmptyCart></EmptyCart>
-              </>
-            ) : (
-              <>
-                {cartItem.map((cart) => (
-                  <Cart
-                    key={cart.id}
-                    cart={cart}
-                    setCartItem={setCartItem}
-                    cartItem={cartItem}
-                  ></Cart>
-                ))}
-              </>
-            )}
+        {toggleHandler === "Products" ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-stretch">
+            {products.map((product) => (
+              <Card
+                product={product}
+                cartItem={cartItem}
+                setCartItem={setCartItem}
+                isBought={isBought}
+                setIsBought={setIsBought}
+              ></Card>
+            ))}
           </div>
-        </div>
+        ) : (
+          <div className="border border-gray-200 px-2 py-3 lg:p-4 rounded-xl space-y-4 lg:space-y-6 ">
+            <h2 className="font-semibold md:font-bold text-xl md:text-2xl flex justify-center items-center md:justify-start md:items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+              Your Cart
+            </h2>
+            <div className=" gap-2 items-stretch flex flex-col">
+              {cartItem.length === 0 ? (
+                <>
+                  <EmptyCart></EmptyCart>
+                </>
+              ) : (
+                <>
+                  {cartItem.map((cart) => (
+                    <Cart
+                      key={cart.id}
+                      cart={cart}
+                      setCartItem={setCartItem}
+                      cartItem={cartItem}
+                    ></Cart>
+                  ))}
+                </>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

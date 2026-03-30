@@ -3,7 +3,8 @@ import React from "react";
 import CardFeature from "./CardFeature";
 // import { FaMagic, FaSwatchbook } from "react-icons/fa";
 
-const Card = ({ product, cartItem, setCartItem }) => {
+const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
+  const isItemBought = isBought.includes(product.name);
   const tagStyles = {
     New: "bg-green-100 text-green-600",
     Popular: "bg-purple-100 text-purple-600",
@@ -12,7 +13,13 @@ const Card = ({ product, cartItem, setCartItem }) => {
 
   const addToCart = (id) => {
     setCartItem([...cartItem, id]);
+    setIsBought((prevName) => {
+      return [...prevName, id.name];
+    });
   };
+
+  // isBought = { isBought };
+  // setIsBought = { setIsBought };
 
   return (
     // used hover effect that already used in toggle button to keep look same
@@ -60,7 +67,7 @@ const Card = ({ product, cartItem, setCartItem }) => {
             }}
             className="w-full text-base font-bold rounded-4xl py-2 md:py-3 px-6 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-white cursor-pointer shadow-[0_7px_20px_-7px_#4F39F6]"
           >
-            Buy Now
+            {isItemBought ? "Added to Cart" : "Buy Now"}
           </button>
         </div>
       </div>
