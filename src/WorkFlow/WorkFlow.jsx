@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkFlow = () => {
   return (
-    <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]  py-8 md:py-15 lg:py-30 px-2 md:px-4 mb-67">
+    <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]  py-8 md:py-15 lg:py-30 px-2 md:px-4">
       <div className="flex flex-col justify-center items-center ">
         <h1 className=" text-center font-semibold lg:font-extrabold  text-xl md:text-3xl lg:text-5xl lg:mb-4 mb-2 text-white">
           Ready to Transform Your Workflow?
