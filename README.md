@@ -1,4 +1,6 @@
-# Description of this project
+# Project name: DigiTools
+
+# Assignment 6
 
 A simple web app where users can browse digital products like AI tools, design assets,
 and productivity software. They can add products to a cart and purchase them.
