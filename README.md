@@ -25,4 +25,4 @@ and productivity software. They can add products to a cart and purchase them.
 
 ## Live Site of this project
 
-https://bpl-dream-11-a-islam.netlify.app
+https://mellifluous-semifreddo-bcc798.netlify.app/
