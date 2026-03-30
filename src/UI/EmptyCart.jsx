@@ -14,4 +14,3 @@ const EmptyCart = () => {
 };
 
 export default EmptyCart;
-<h2>Your Cart is empty</h2>;
