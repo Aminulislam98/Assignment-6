@@ -23,4 +23,4 @@ and productivity software. They can add products to a cart and purchase them.
 
 ## Live Site of this project
 
-https://mellifluous-semifreddo-bcc798.netlify.app/
+https://digitoolswebsite.netlify.app/
