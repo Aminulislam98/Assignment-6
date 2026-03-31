@@ -19,7 +19,7 @@ const Step = () => {
         {/* bottom section */}
         <div className=" mt-2 lg:mt-4 flex wrap flex-col sm:flex-row justify-between gap-4  items-stretch w-full">
           <div
-            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-3 md:hover:-translate-y-0.5 
+            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border-2 border-purple-200 rounded-xl px-3 md:hover:-translate-y-0.5 
         md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
        md:hover:border-purple-300 cursor-pointer transition-all duration-300 ease-in-out"
           >
@@ -43,7 +43,7 @@ const Step = () => {
             </div>
           </div>
           <div
-            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-3 cursor-pointer md:hover:-translate-y-0.5 
+            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border-2 border-purple-200 rounded-xl px-3 cursor-pointer md:hover:-translate-y-0.5 
         md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
        md:hover:border-purple-300 transition-all duration-300 ease-in-out"
           >
@@ -67,7 +67,7 @@ const Step = () => {
             </div>
           </div>
           <div
-            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border border-purple-100 rounded-xl px-3 md:hover:-translate-y-0.5 cursor-pointer 
+            className="relative bg-white py-11 lg:py-22 flex flex-col justify-center items-center w-full space-y-2 lg:space-y-4 border-2 border-purple-200 rounded-xl px-3 md:hover:-translate-y-0.5 cursor-pointer 
         md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
        md:hover:border-purple-300 transition-all duration-300 ease-in-out"
           >

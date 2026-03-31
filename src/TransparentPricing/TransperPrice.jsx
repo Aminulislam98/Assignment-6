@@ -20,7 +20,7 @@ const TransperPrice = () => {
         <div className=" mt-2 lg:mt-4 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 sm:flex-row justify-between md:gap-1 gap-7 lg:gap-4 items-stretch w-full h-full ">
           {/* first pricing card */}
           <div
-            className="flex w-full flex-col p-4 border-2  border-gray-100
+            className="flex w-full flex-col p-4 border-2  border-gray-300
                 bg-gray-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
                 md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
             md:hover:border-purple-300  transition-all duration-300 ease-in-out
@@ -157,7 +157,7 @@ const TransperPrice = () => {
           </div>
           {/* third pricing card */}
           <div
-            className="flex w-full flex-col p-4 border-2  border-gray-100
+            className="flex w-full flex-col p-4 border-2  border-gray-300
                 bg-gray-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
                 md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
             md:hover:border-purple-300  transition-all duration-300 ease-in-out
