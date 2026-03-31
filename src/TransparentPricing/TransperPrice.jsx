@@ -1,5 +1,4 @@
 import React from "react";
-import { FcCheckmark } from "react-icons/fc";
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
 const TransperPrice = () => {

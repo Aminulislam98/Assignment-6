@@ -26,7 +26,7 @@ const Card = ({ product, cartItem, setCartItem, isBought, setIsBought }) => {
   return (
     // used hover effect that already used in toggle button to keep look same
     <div
-      className="flex flex-col p-4 border-2  border-purple-100
+      className="flex flex-col p-4 border-2  border-purple-200
         bg-purple-50  rounded-2xl gap-3 relative h-full md:hover:-translate-y-0.5 
         md:hover:shadow-[0_7px_20px_-10px_#4F39F6]
        md:hover:border-purple-300
