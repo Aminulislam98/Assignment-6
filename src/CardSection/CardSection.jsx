@@ -90,11 +90,11 @@ const CardSection = ({
             ))}
           </div>
         ) : (
-          <div className="border border-gray-200 px-2 py-3 lg:p-4 rounded-4xl space-y-4 lg:space-y-6 ">
+          <div className="border border-gray-200 px-2 py-3 lg:p-4 rounded-2xl md:rounded-4xl space-y-4 lg:space-y-6 ">
             {cartItem.length === 0 ? (
               ""
             ) : (
-              <h2 className="font-semibold md:font-bold text-xl md:text-2xl flex justify-center items-center md:justify-start md:items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+              <h2 className="font-bold md:font-bold text-xl md:text-2xl flex justify-center items-center md:justify-start md:items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
                 Your Cart
               </h2>
             )}
